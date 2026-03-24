@@ -230,7 +230,10 @@
 
             <p class="visitor-counter">
                 Besucher insgesamt:
-                <span id="visitor-count">Lädt...</span>
+                <span id="visitor-count"></span>
+                <script>
+                window.goatcounter.visit_count({append: "#visitor-count"});
+                </script>
             </p>
         </div>
     </footer>
@@ -242,5 +245,8 @@
 
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
+
+    <script data-goatcounter="https://tanelicode.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

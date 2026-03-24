@@ -110,27 +110,3 @@ window.addEventListener("scroll", handleScroll);
 */
 window.addEventListener("resize", handleScroll);
 
-const visitorCountElement = document.getElementById("visitor-count");
-
-function loadVisitorCount() {
-    if (!visitorCountElement) {
-        return;
-    }
-
-    fetch("https://api.countapi.xyz/hit/tanelicode/portfolio-homepage")
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            if (typeof data.value !== "undefined") {
-                visitorCountElement.textContent = data.value;
-            } else {
-                visitorCountElement.textContent = "—";
-            }
-        })
-        .catch(function () {
-            visitorCountElement.textContent = "—";
-        });
-}
-
-loadVisitorCount();
