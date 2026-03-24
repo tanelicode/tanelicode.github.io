@@ -109,3 +109,28 @@ window.addEventListener("scroll", handleScroll);
     Das ist hilfreich, falls sich die Headerhöhe auf mobilen Geräten ändert.
 */
 window.addEventListener("resize", handleScroll);
+
+const visitorCountElement = document.getElementById("visitor-count");
+
+function loadVisitorCount() {
+    if (!visitorCountElement) {
+        return;
+    }
+
+    fetch("https://api.countapi.xyz/hit/tanelicode/portfolio-homepage")
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            if (typeof data.value !== "undefined") {
+                visitorCountElement.textContent = data.value;
+            } else {
+                visitorCountElement.textContent = "—";
+            }
+        })
+        .catch(function () {
+            visitorCountElement.textContent = "—";
+        });
+}
+
+loadVisitorCount();

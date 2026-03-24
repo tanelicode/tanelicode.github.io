@@ -659,3 +659,26 @@ ul {
         height: 48px;
     }
 }
+.footer-content {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.visitor-counter {
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #acb8d4;
+}
+
+#visitor-count {
+    color: #58d4ff;
+    font-weight: bold;
+    margin-left: 6px;
+}
