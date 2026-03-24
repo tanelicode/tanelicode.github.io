@@ -43,6 +43,16 @@
             <!-- Social-Links -->
             <div class="social-links">
                 <a
+                    href="https://github.com/tanelicode"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub öffnen"
+                    class="social-link"
+                >
+                    <img src="assets/img/github_logo.png" alt="GitHub Logo" class="social-icon">
+                </a>
+
+                <a
                     href="https://www.linkedin.com/in/%C3%B6zkan-taneli-707278325/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -62,7 +72,7 @@
         <section class="hero">
             <div class="hero-overlay">
                 <div class="hero-content">
-                    <p class="eyebrow">Portfolio ·Anwendungsentwicklung</p>
+                    <p class="eyebrow">Portfolio · Anwendungsentwicklung</p>
 
                     <h1>
                         Ich entwickle klare, moderne und funktionale Anwendungen.
@@ -231,9 +241,6 @@
             <p class="visitor-counter">
                 Besucher insgesamt:
                 <span id="visitor-count"></span>
-                <script>
-                window.goatcounter.visit_count({append: "#visitor-count"});
-                </script>
             </p>
         </div>
     </footer>
@@ -246,7 +253,29 @@
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
 
-    <script data-goatcounter="https://tanelicode.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+    <!-- GoatCounter Hauptscript -->
+    <script
+        data-goatcounter="https://tanelicode.goatcounter.com/count"
+        async
+        src="https://gc.zgo.at/count.js">
+    </script>
+
+    <!-- Sichtbaren Besucherzähler erst nach dem Laden setzen -->
+    <script>
+        window.addEventListener("load", function () {
+            const tryAttachCounter = setInterval(function () {
+                if (window.goatcounter && typeof window.goatcounter.visit_count === "function") {
+                    window.goatcounter.visit_count({
+                        append: "#visitor-count"
+                    });
+                    clearInterval(tryAttachCounter);
+                }
+            }, 300);
+
+            setTimeout(function () {
+                clearInterval(tryAttachCounter);
+            }, 5000);
+        });
+    </script>
 </body>
 </html>
