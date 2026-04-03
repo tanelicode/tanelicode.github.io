@@ -389,6 +389,17 @@ ul {
     gap: 24px;
 }
 
+.project-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-link .project-card {
+    height: 100%;
+    cursor: pointer;
+}
+
 .project-card {
     padding: 28px;
     border-radius: var(--radius-large);
@@ -405,7 +416,8 @@ ul {
         box-shadow var(--transition);
 }
 
-.project-card:hover {
+.project-card:hover,
+.project-link:hover .project-card {
     transform: translateY(-6px);
     border-color: var(--border-accent);
     box-shadow: 0 24px 40px rgba(0, 0, 0, 0.38);
