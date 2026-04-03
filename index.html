@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4VSGQMNVLE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4VSGQMNVLE');
+    </script>
+
     <!-- Grundlegende Einstellungen -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,13 +35,10 @@
     <!-- Kopfbereich -->
     <header class="site-header" id="top">
         <nav class="navbar">
-
-            <!-- Eigenes Logo -->
             <a href="#top" class="logo-link" aria-label="Zur Startseite">
                 <img src="assets/img/mein_logo.png" alt="Mein Logo" class="site-logo">
             </a>
 
-            <!-- Navigation -->
             <ul class="nav-list">
                 <li><a href="#about">Über mich</a></li>
                 <li><a href="#projects">Projekte</a></li>
@@ -40,7 +46,6 @@
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
 
-            <!-- Social-Links -->
             <div class="social-links">
                 <a
                     href="https://github.com/tanelicode"
@@ -67,16 +72,13 @@
 
     <!-- Hauptinhalt -->
     <main>
-
         <!-- Hero-Bereich -->
         <section class="hero">
             <div class="hero-overlay">
                 <div class="hero-content">
                     <p class="eyebrow">Portfolio · Anwendungsentwicklung</p>
 
-                    <h1>
-                        Ich entwickle klare, moderne und funktionale Anwendungen.
-                    </h1>
+                    <h1>Ich entwickle klare, moderne und funktionale Anwendungen.</h1>
 
                     <p class="hero-text">
                         Ich bin Özkan Taneli und befinde mich aktuell in der Umschulung zum Fachinformatiker
@@ -97,11 +99,11 @@
                     </div>
                 </div>
 
-                <div class="hero-image-wrapper">
+                <figure class="hero-image-wrapper">
                     <div class="hero-image-card">
                         <img src="assets/img/profilfoto.jpg" alt="Profilbild von Özkan Taneli" class="hero-image">
                     </div>
-                </div>
+                </figure>
             </div>
         </section>
 
@@ -235,14 +237,7 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-content">
-            <p>&copy; 2026 Özkan Taneli</p>
-
-            <p class="visitor-counter">
-                Besucher insgesamt:
-                <span id="visitor-count">-</span>
-            </p>
-        </div>
+        <p>&copy; 2026 Özkan Taneli</p>
     </footer>
 
     <!-- Nach-oben-Button -->
@@ -252,30 +247,5 @@
 
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
-
-    <!-- GoatCounter Hauptscript -->
-    <!--script
-        data-goatcounter="https://tanelicode.goatcounter.com/count"
-        async
-        src="https://gc.zgo.at/count.js">
-    </script>
-
-    <!-- Sichtbaren Besucherzähler erst nach dem Laden setzen -->
-    <script>
-        window.addEventListener("load", function () {
-            const tryAttachCounter = setInterval(function () {
-                if (window.goatcounter && typeof window.goatcounter.visit_count === "function") {
-                    window.goatcounter.visit_count({
-                        append: "#visitor-count"
-                    });
-                    clearInterval(tryAttachCounter);
-                }
-            }, 300);
-
-            setTimeout(function () {
-                clearInterval(tryAttachCounter);
-            }, 5000);
-        });
-    </script>
 </body>
 </html>

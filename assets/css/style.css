@@ -1,12 +1,10 @@
 /* =========================================================
    BASIS
-   Grundfarben, Schrift und allgemeine Einstellungen
 ========================================================= */
 
 :root {
     --bg-main: #050816;
     --bg-soft: rgba(255, 255, 255, 0.04);
-    --bg-soft-strong: rgba(255, 255, 255, 0.07);
     --border: rgba(255, 255, 255, 0.12);
     --border-accent: rgba(86, 209, 255, 0.32);
     --text-main: #f4f7ff;
@@ -16,7 +14,6 @@
     --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
     --radius-large: 24px;
     --radius-medium: 18px;
-    --radius-small: 12px;
     --container: 1180px;
     --transition: 0.25s ease;
 }
@@ -335,7 +332,7 @@ ul {
 }
 
 /* =========================================================
-   ALLGEMEINE SECTIONS
+   SECTIONS
 ========================================================= */
 
 .section {
@@ -517,66 +514,11 @@ ul {
    FOOTER
 ========================================================= */
 
-/* =========================================================
-   FOOTER
-========================================================= */
-
 .site-footer {
     padding: 28px 24px 34px;
+    text-align: center;
     color: var(--text-soft);
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.footer-content {
-    max-width: 1180px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    gap: 16px;
-}
-
-/* Copyright links */
-.footer-content > p:first-child {
-    justify-self: start;
-    margin: 0;
-}
-
-/* Zähler exakt mittig */
-.visitor-counter {
-    justify-self: center;
-    margin: 0;
-    padding: 10px 14px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    color: #acb8d4;
-    white-space: nowrap;
-    text-align: center;
-}
-
-#visitor-count {
-    color: #58d4ff;
-    font-weight: bold;
-    margin-left: 6px;
-}
-
-@media (max-width: 768px) {
-    .footer-content {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        text-align: center;
-        gap: 14px;
-    }
-
-    .footer-content > p:first-child {
-        justify-self: center;
-    }
-
-    .visitor-counter {
-        white-space: normal;
-        max-width: calc(100vw - 40px);
-    }
 }
 
 /* =========================================================
@@ -670,30 +612,6 @@ ul {
 
     .skills-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 768px) {
-    .footer-content {
-        min-height: 88px;
-        display: block;
-        text-align: center;
-    }
-
-    .footer-content > p:first-child {
-        position: static;
-        transform: none;
-        text-align: center;
-        margin-bottom: 14px;
-    }
-
-    .visitor-counter {
-        position: static;
-        transform: none;
-        display: inline-block;
-        max-width: calc(100vw - 40px);
-        white-space: normal;
-        line-height: 1.4;
     }
 }
 
