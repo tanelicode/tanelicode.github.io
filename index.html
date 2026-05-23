@@ -1,259 +1,161 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4VSGQMNVLE"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-4VSGQMNVLE');
-    </script>
-
-    <!-- Grundlegende Einstellungen -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Titel der Seite -->
-    <title>Özkan Taneli | Portfolio</title>
-
-    <!-- Beschreibung für Suchmaschinen -->
-    <meta
-        name="description"
-        content="Portfolio von Özkan Taneli – angehender Fachinformatiker für Anwendungsentwicklung mit Fokus auf Webentwicklung, Software und eigene Projekte."
-    >
-
-    <!-- CSS-Datei -->
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio von Özkan Taneli – Fachinformatiker Anwendungsentwicklung" />
+  <title>Özkan Taneli | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-    <!-- Hintergrund-Effekt -->
-    <div class="background-glow background-glow-one"></div>
-    <div class="background-glow background-glow-two"></div>
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="#top">ÖT.</a>
+    <ul class="nav-links">
+      <li><a href="#about">Über mich</a></li>
+      <li><a href="#projects">Projekte</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <!-- Kopfbereich -->
-    <header class="site-header" id="top">
-        <nav class="navbar">
-            <a href="#top" class="logo-link" aria-label="Zur Startseite">
-                <img src="assets/img/mein_logo.png" alt="Mein Logo" class="site-logo">
-            </a>
+<section id="top">
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div>
+      <span class="badge">⚡ Verfügbar für Praktika &amp; Projekte</span>
+      <h1>Ich entwickle <span>klare, moderne</span> Anwendungen.</h1>
+      <p class="sub">Hallo, ich bin Özkan Taneli – angehender Fachinformatiker für Anwendungsentwicklung mit Fokus auf Fullstack-Entwicklung.</p>
+      <div class="btns">
+        <a class="btn btn-fill" href="#projects">Projekte ansehen</a>
+        <a class="btn btn-outline" href="#contact">Kontakt aufnehmen</a>
+      </div>
+      <div class="socials">
+        <a class="soc-link" href="https://github.com/tanelicode" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub
+        </a>
+        <a class="soc-link" href="https://www.linkedin.com/in/özkan-taneli-707278325/" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    <div class="avatar-wrap">
+      <img class="avatar" src="assets/img/profilfoto.jpg" alt="Özkan Taneli" />
+    </div>
+  </div>
+</section>
 
-            <ul class="nav-list">
-                <li><a href="#about">Über mich</a></li>
-                <li><a href="#projects">Projekte</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
+<section id="about">
+  <div class="wrap">
+    <p class="eyebrow">// über mich</p>
+    <h2>Motiviert, strukturiert &amp; praxisorientiert</h2>
+    <div class="about-grid">
+      <div>
+        <p>Ich befinde mich aktuell in der Umschulung zum Fachinformatiker für Anwendungsentwicklung und entwickle mich intensiv im Bereich Fullstack-Entwicklung weiter.</p>
+        <p>Besonders fasziniert mich der Moment, in dem aus einer Idee Schritt für Schritt eine funktionierende Anwendung entsteht. Dabei lege ich großen Wert auf saubere Struktur, klare Architektur und nachvollziehbare Lösungen.</p>
+        <p>Mein Ziel ist es, mich fachlich stetig weiterzuentwickeln und Projekte zu bauen, die technisch sinnvoll, optisch modern und für andere gut nutzbar sind.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="stat-n">3+</div><span>Eigene Projekte</span></div>
+        <div class="stat"><div class="stat-n">6+</div><span>Technologien</span></div>
+        <div class="stat"><div class="stat-n">100%</div><span>Lernbereitschaft</span></div>
+        <div class="stat"><div class="stat-n">FS</div><span>Fullstack Fokus</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <div class="social-links">
-                <a
-                    href="https://github.com/tanelicode"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub öffnen"
-                    class="social-link"
-                >
-                    <img src="assets/img/github_logo.png" alt="GitHub Logo" class="social-icon">
-                </a>
+<section id="projects">
+  <div class="wrap">
+    <p class="eyebrow">// projekte</p>
+    <h2>Ein Auszug meiner Arbeiten</h2>
+    <p class="lead">Projekte, an denen ich Gelerntes praktisch angewendet und weiterentwickelt habe.</p>
+    <div class="project-grid">
 
-                <a
-                    href="https://www.linkedin.com/in/%C3%B6zkan-taneli-707278325/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn öffnen"
-                    class="social-link"
-                >
-                    <img src="assets/img/linkedin_logo.jpg" alt="LinkedIn Logo" class="social-icon">
-                </a>
-            </div>
-        </nav>
-    </header>
+      <div class="project">
+        <div class="proj-num">01</div>
+        <h3>Taschenrechner</h3>
+        <p>Frontend-Projekt mit Fokus auf verständliche Bedienung und saubere technische Struktur.</p>
+        <div class="tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+        <a class="proj-link" href="https://tanelicode.github.io/calculator/" target="_blank">Live ansehen →</a>
+      </div>
 
-    <!-- Hauptinhalt -->
-    <main>
-        <!-- Hero-Bereich -->
-        <section class="hero">
-            <div class="hero-overlay">
-                <div class="hero-content">
-                    <p class="eyebrow">Portfolio · Anwendungsentwicklung</p>
+      <div class="project">
+        <div class="proj-num">02</div>
+        <h3>Portfolio-Website</h3>
+        <p>Persönliche Plattform für Projekte, Lernfortschritte und Links – wird laufend ausgebaut.</p>
+        <div class="tags">
+          <span class="tag">Design</span><span class="tag">Frontend</span><span class="tag">Responsive</span>
+        </div>
+        <a class="proj-link" href="https://tanelicode.github.io/" target="_blank">Live ansehen →</a>
+      </div>
 
-                    <h1>Ich entwickle klare, moderne und funktionale Anwendungen.</h1>
+      <div class="project">
+        <div class="proj-num">03</div>
+        <h3>GitHub-Projekte</h3>
+        <p>Weitere Experimente und Lernstände auf meinem GitHub – regelmäßige Commits zeigen den Fortschritt.</p>
+        <div class="tags">
+          <span class="tag">GitHub</span><span class="tag">Open Source</span>
+        </div>
+        <a class="proj-link" href="https://github.com/tanelicode" target="_blank">GitHub öffnen →</a>
+      </div>
 
-                    <p class="hero-text">
-                        Ich bin Özkan Taneli und befinde mich aktuell in der Umschulung zum Fachinformatiker
-                        für Anwendungsentwicklung. Mein Fokus liegt auf Fullstack-Entwicklung und darauf,
-                        Frontend und Backend sinnvoll miteinander zu verbinden.
-                    </p>
+    </div>
+  </div>
+</section>
 
-                    <div class="hero-buttons">
-                        <a href="#projects" class="button button-primary">Projekte ansehen</a>
-                        <a
-                            href="https://github.com/tanelicode"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="button button-secondary"
-                        >
-                            GitHub öffnen
-                        </a>
-                    </div>
-                </div>
+<section id="skills">
+  <div class="wrap">
+    <p class="eyebrow">// technologien</p>
+    <h2>Mein Tech-Stack</h2>
+    <p class="lead">Technologien, mit denen ich aktiv arbeite und lerne.</p>
+    <div class="skill-grid">
+      <div class="skill"><i>🌐</i><div class="skill-name">HTML</div><div class="bar"><div class="bar-fill" style="width:90%"></div></div></div>
+      <div class="skill"><i>🎨</i><div class="skill-name">CSS</div><div class="bar"><div class="bar-fill" style="width:85%"></div></div></div>
+      <div class="skill"><i>⚡</i><div class="skill-name">JavaScript</div><div class="bar"><div class="bar-fill" style="width:75%"></div></div></div>
+      <div class="skill"><i>🐘</i><div class="skill-name">PHP</div><div class="bar"><div class="bar-fill" style="width:60%"></div></div></div>
+      <div class="skill"><i>🐍</i><div class="skill-name">Python</div><div class="bar"><div class="bar-fill" style="width:65%"></div></div></div>
+      <div class="skill"><i>☕</i><div class="skill-name">Java</div><div class="bar"><div class="bar-fill" style="width:55%"></div></div></div>
+    </div>
+  </div>
+</section>
 
-                <figure class="hero-image-wrapper">
-                    <div class="hero-image-card">
-                        <img src="assets/img/profilfoto.jpg" alt="Profilbild von Özkan Taneli" class="hero-image">
-                    </div>
-                </figure>
-            </div>
-        </section>
+<section id="contact">
+  <div class="wrap">
+    <p class="eyebrow">// kontakt</p>
+    <h2>Lass uns reden</h2>
+    <p class="lead">Du hast eine Idee oder ein Projekt? Meld dich gerne.</p>
+    <div class="contact-grid">
+      <a class="contact-item" href="mailto:it_oezkan.taneli@hotmail.com">
+        <div class="c-icon">✉️</div>
+        <div><div class="c-label">E-Mail</div><div class="c-val">it_oezkan.taneli@hotmail.com</div></div>
+      </a>
+      <a class="contact-item" href="https://github.com/tanelicode" target="_blank">
+        <div class="c-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#6c63ff"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </div>
+        <div><div class="c-label">GitHub</div><div class="c-val">github.com/tanelicode</div></div>
+      </a>
+      <a class="contact-item" href="https://www.linkedin.com/in/özkan-taneli-707278325/" target="_blank">
+        <div class="c-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#6c63ff"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </div>
+        <div><div class="c-label">LinkedIn</div><div class="c-val">Profil öffnen</div></div>
+      </a>
+    </div>
+  </div>
+</section>
 
-        <!-- Über mich -->
-        <section id="about" class="section">
-            <div class="section-head">
-                <p class="section-label">Über mich</p>
-                <h2>Motiviert, strukturiert und praxisorientiert</h2>
-            </div>
+<footer>
+  <p>© 2026 Özkan Taneli</p>
+</footer>
 
-            <div class="content-card">
-                <p>
-                    Ich entwickle mich aktuell intensiv im Bereich Anwendungsentwicklung weiter
-                    und arbeite daran, meine Kenntnisse nicht nur zu lernen, sondern auch
-                    praktisch umzusetzen.
-                </p>
-
-                <p>
-                    Besonders spannend finde ich Aufgaben, bei denen aus einer Idee Schritt für
-                    Schritt eine funktionierende Anwendung entsteht. Dabei lege ich Wert auf
-                    Übersicht, saubere Struktur und nachvollziehbare Lösungen.
-                </p>
-
-                <p>
-                    Mein Ziel ist es, mich fachlich stetig weiterzuentwickeln und Projekte zu
-                    bauen, die technisch sinnvoll, optisch modern und für andere gut nutzbar sind.
-                </p>
-            </div>
-        </section>
-
-        <!-- Projekte -->
-        <section id="projects" class="section">
-            <div class="section-head">
-                <p class="section-label">Projekte</p>
-                <h2>Ein Auszug aus meinen Arbeiten</h2>
-            </div>
-
-            <div class="projects-grid">
-                <a
-                    href="https://tanelicode.github.io/calculator/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project-link"
-                    aria-label="Taschenrechner Live-Demo öffnen"
-                >
-                    <article class="project-card">
-                        <div class="project-topline">01</div>
-                        <h3>Taschenrechner</h3>
-                        <p>
-                            Ein eigenes Frontend-Projekt mit HTML, CSS und JavaScript.
-                            Schwerpunkt war eine verständliche Bedienung und eine saubere
-                            technische Struktur.
-                        </p>
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </article>
-                </a>
-
-                <article class="project-card">
-                    <div class="project-topline">02</div>
-                    <h3>Portfolio-Website</h3>
-                    <p>
-                        Diese Website wird fortlaufend weiterentwickelt und dient als
-                        persönliche Plattform, um Projekte, Lernfortschritte und Links
-                        übersichtlich zu präsentieren.
-                    </p>
-                    <div class="project-tags">
-                        <span>Design</span>
-                        <span>Frontend</span>
-                        <span>Responsive</span>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-topline">03</div>
-                    <h3>GitHub-Projekte</h3>
-                    <p>
-                        Weitere Projekte, Experimente und Lernstände veröffentliche ich
-                        gesammelt auf meinem GitHub-Profil.
-                    </p>
-                    <div class="project-tags">
-                        <span>GitHub</span>
-                        <span>Code</span>
-                        <span>Praxis</span>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" class="section">
-            <div class="section-head">
-                <p class="section-label">Skills</p>
-                <h2>Technologien, mit denen ich arbeite</h2>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-card">HTML</div>
-                <div class="skill-card">CSS</div>
-                <div class="skill-card">JavaScript</div>
-                <div class="skill-card">PHP</div>
-                <div class="skill-card">Python</div>
-                <div class="skill-card">Java</div>
-            </div>
-        </section>
-
-        <!-- Kontakt -->
-        <section id="contact" class="section">
-            <div class="section-head">
-                <p class="section-label">Kontakt</p>
-                <h2>Direkte Wege zu mir</h2>
-            </div>
-
-            <div class="contact-card">
-                <div class="contact-item">
-                    <span class="contact-title">E-Mail</span>
-                    <a href="mailto:it_oezkan.taneli@hotmail.com">it_oezkan.taneli@hotmail.com</a>
-                </div>
-
-                <div class="contact-item">
-                    <span class="contact-title">GitHub</span>
-                    <a href="https://github.com/tanelicode" target="_blank" rel="noopener noreferrer">
-                        github.com/tanelicode
-                    </a>
-                </div>
-
-                <div class="contact-item">
-                    <span class="contact-title">LinkedIn</span>
-                    <a href="https://www.linkedin.com/in/%C3%B6zkan-taneli-707278325/" target="_blank" rel="noopener noreferrer">
-                        LinkedIn Profil öffnen
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <p>&copy; 2026 Özkan Taneli</p>
-    </footer>
-
-    <!-- Nach-oben-Button -->
-    <a id="scrollToTopBtn" href="#top" class="scroll-to-top-button" aria-label="Nach oben">
-        <img src="assets/img/arrow-up.png" alt="Nach oben">
-    </a>
-
-    <!-- JavaScript -->
-    <script src="assets/js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
